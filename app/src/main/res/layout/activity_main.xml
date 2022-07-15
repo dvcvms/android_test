@@ -86,8 +86,7 @@
         android:background="#050B18"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_17" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/dota_2_is_a"
