@@ -7,70 +7,71 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/image_16"
         android:layout_width="628dp"
         android:layout_height="354dp"
-        android:tint="#30000000"
         app:srcCompat="@drawable/image"
         tools:layout_editor_absoluteX="-126dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        tools:layout_editor_absoluteY="-16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/time"
         android:layout_width="54dp"
         android:layout_height="18dp"
-        android:layout_marginStart="21dp"
         android:layout_marginTop="10dp"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:text="9:41"
-        android:background="@dra"
+        android:layout_marginLeft="21dp"
         android:textColor="#FFFFFF"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/oval"
+        style="time"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
-        android:background="@drawable/ic_oval"
+        android:background="@drawable/oval"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view24"
+        android:id="@+id/arrowleft"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="41dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/ic_arrow"
+        android:background="@drawable/arrow_left"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view22"
+        android:id="@+id/oval_1"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="295dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="184dp"
-        android:background="@drawable/ic_oval"
+        android:background="@drawable/oval"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view23"
+        android:id="@+id/more_square"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="311dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="242dp"
-        android:background="@drawable/ic_tochki"
+        android:background="@drawable/more_square"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -83,7 +84,10 @@
         android:layout_width="375dp"
         android:layout_height="700dp"
         android:background="#050B18"
-        tools:layout_editor_absoluteY="296dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_17" />
 
     <TextView
         android:id="@+id/dota_2_is_a"
@@ -194,6 +198,9 @@
         android:layout_marginTop="388dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="252dp"
+        android:gravity="top"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="6sp"
         android:text="“Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.”"
         android:textColor="#A8ADB7"
         android:textSize="12sp"
@@ -211,12 +218,12 @@
         android:layout_marginTop="462dp"
         android:layout_marginEnd="315dp"
         android:layout_marginBottom="202dp"
-        android:background="@drawable/ic_ecl9"
+        android:background="@drawable/eclipse_8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/rectangle_2"
-        app:srcCompat="@drawable/imm" />
+        app:srcCompat="@drawable/eclipse_8" />
 
     <TextView
         android:id="@+id/jang_marcel"
@@ -251,13 +258,16 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/once_you_st_1"
         android:layout_width="327dp"
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="516dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="124dp"
+        android:gravity="top"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="6sp"
         android:text="“Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.”"
         android:textColor="#A8ADB7"
         android:textSize="12sp"
@@ -267,7 +277,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view4"
+        android:id="@+id/rectangle_3"
 
         android:layout_width="327dp"
         android:layout_height="64dp"
@@ -275,7 +285,7 @@
         android:layout_marginTop="600dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/ic_rectangle33"
+        android:background="@drawable/rectangle_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -289,6 +299,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="181dp"
         android:layout_marginBottom="662dp"
+        android:letterSpacing="0.03"
         android:text="DoTA 2"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -298,7 +309,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/star_1"
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_marginStart="124dp"
@@ -326,7 +337,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/star_2"
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_marginStart="140dp"
@@ -354,7 +365,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view5"
+        android:id="@+id/star_3"
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_marginStart="156dp"
@@ -382,7 +393,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view6"
+        android:id="@+id/star_4"
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_marginStart="172dp"
@@ -424,7 +435,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view12"
+        android:id="@+id/star_5"
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_marginStart="188dp"
@@ -453,12 +464,13 @@
 
     <TextView
         android:id="@+id/m"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="26dp"
+        android:layout_height="14dp"
         android:layout_marginStart="210dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="139dp"
         android:layout_marginBottom="642dp"
+        android:gravity="top"
         android:text="70M"
         android:textColor="#45454D"
         android:textSize="12sp"
@@ -505,6 +517,8 @@
         android:layout_marginTop="620dp"
         android:layout_marginEnd="158dp"
         android:layout_marginBottom="56dp"
+        android:gravity="top"
+        android:letterSpacing="0.03"
         android:shadowColor="#050B18"
         android:text="Install"
         android:textSize="20sp"
@@ -514,14 +528,14 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
 
     <View
-        android:id="@+id/view15"
+        android:id="@+id/rectangle_02"
         android:layout_width="88dp"
         android:layout_height="88dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="274dp"
         android:layout_marginEnd="263dp"
         android:layout_marginBottom="634dp"
-        android:background="@drawable/ic_rectangle27"
+        android:background="@drawable/rectangle_02"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -530,7 +544,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/view16"
+        android:id="@+id/rectangle_002"
         android:layout_width="84.13dp"
         android:layout_height="84.13dp"
         android:layout_marginStart="26dp"
@@ -542,23 +556,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/oval"
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/view17"
+        android:id="@+id/image_17"
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_marginStart="41dp"
         android:layout_marginTop="179dp"
         android:layout_marginEnd="280dp"
         android:layout_marginBottom="651dp"
-        android:background="@drawable/dota"
+        android:background="@drawable/image_17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <View
         android:id="@+id/view18"
@@ -572,7 +586,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <View
         android:id="@+id/view19"
@@ -586,7 +600,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/oval"
         app:layout_constraintVertical_bias="0.0" />
 
     <View
@@ -601,7 +615,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <TextView
         android:id="@+id/textView4"
@@ -611,14 +625,14 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="308dp"
         android:layout_marginBottom="594dp"
+        android:gravity="center"
         android:text="MOBA"
         android:textColor="#44A9F4"
         android:textSize="10sp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <TextView
         android:id="@+id/textView5"
@@ -628,13 +642,14 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="205dp"
         android:layout_marginBottom="594dp"
+        android:gravity="center"
         android:text="MULTIPLAYER"
         android:textColor="#41A0E7"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <TextView
         android:id="@+id/textView6"
@@ -644,22 +659,23 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="594dp"
+        android:gravity="center"
         android:text="STRATEGY"
         android:textColor="#41A0E7"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/oval" />
 
     <View
-        android:id="@+id/view25"
+        android:id="@+id/cellular_co"
         android:layout_width="17dp"
         android:layout_height="10.67dp"
         android:layout_marginStart="294dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="64dp"
-        android:background="@drawable/ic_inet"
+        android:background="@drawable/cellular_co"
         android:layout_marginBottom="271dp"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -667,13 +683,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view26"
+        android:id="@+id/wifi"
         android:layout_width="15.33dp"
         android:layout_height="11dp"
         android:layout_marginStart="316dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="43dp"
-        android:background="@drawable/ic_wifi"
+        android:background="@drawable/wifi"
         android:layout_marginBottom="271dp"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -681,14 +697,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view27"
+        android:id="@+id/battery"
         android:layout_width="24.33dp"
         android:layout_height="11.33dp"
         android:layout_marginStart="336dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="271dp"
-        android:background="@drawable/ic_battery"
+        android:background="@drawable/battery"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
